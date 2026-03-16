@@ -16,7 +16,7 @@ function Hero() {
       <div className={s.heroBg} />
       <div className={s.heroOverlay} />
       <div className={`container ${s.heroContent}`}>
-        <p className={s.heroPre}>Garage Toutes Marques — Saint-Pierre-du-Mont</p>
+        <p className={s.heroPre}>Garage Multi-marques — Saint-Pierre-du-Mont</p>
         <h1 className={s.heroTitle}>
           Bienvenue au<br />
           <span>Garage Mon Auto Aquitaine</span>
