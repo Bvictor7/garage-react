@@ -1,0 +1,56 @@
+.footer { background: #1a2535; color: rgba(255,255,255,0.65); }
+
+.grid {
+  display: grid; grid-template-columns: 1.8fr 1fr 1.2fr 1.2fr;
+  gap: 40px; padding-top: 56px; padding-bottom: 48px;
+}
+
+/* Brand */
+.brand { }
+.logo { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.logoIcon { width: 44px; height: 44px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logoMain { font-family: var(--font-title); font-size: 16px; font-weight: 800; color: white; }
+.logoSub { font-family: var(--font-title); font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1px; }
+.brandDesc { font-size: 13px; line-height: 1.7; margin-bottom: 20px; }
+.social { display: flex; gap: 8px; }
+.socialBtn { width: 34px; height: 34px; background: rgba(255,255,255,0.07); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.6); transition: var(--ease); }
+.socialBtn:hover { background: var(--primary); color: white; }
+
+/* Columns */
+.colTitle { font-family: var(--font-title); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: white; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.col ul { display: flex; flex-direction: column; gap: 8px; }
+.col ul li a { font-size: 13px; color: rgba(255,255,255,0.55); transition: var(--ease); }
+.col ul li a:hover { color: white; padding-left: 4px; }
+
+/* Horaires */
+.horaires { display: flex; flex-direction: column; gap: 6px !important; }
+.horaires li { display: flex; justify-content: space-between; font-size: 12px; gap: 8px; }
+.jour { color: rgba(255,255,255,0.5); }
+.heures { color: rgba(255,255,255,0.8); font-weight: 500; text-align: right; }
+.ferme { opacity: 0.4; }
+
+/* Contact */
+.contactItems { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+.contactItem { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; }
+.contactItem svg { flex-shrink: 0; margin-top: 2px; color: var(--primary); }
+.contactItem a { color: rgba(255,255,255,0.65); transition: var(--ease); }
+.contactItem a:hover { color: white; }
+.contactBtn { width: 100%; justify-content: center; }
+
+/* Bottom */
+.bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 16px 0;
+}
+.bottom > div {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 12px; color: rgba(255,255,255,0.3); flex-wrap: wrap; gap: 8px;
+}
+.bottom a { color: rgba(255,255,255,0.3); transition: var(--ease); }
+.bottom a:hover { color: white; }
+
+@media (max-width: 1024px) { .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; gap: 32px; padding-top: 40px; }
+  .bottom > div { flex-direction: column; text-align: center; }
+}

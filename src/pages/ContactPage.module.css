@@ -1,0 +1,35 @@
+.grid { display:grid; grid-template-columns:1fr 1.3fr; gap:60px; }
+.infos { }
+.infoItem { display:flex; gap:14px; align-items:flex-start; padding:16px 0; border-bottom:1px solid var(--gris-border); }
+.infoIcon { width:40px; height:40px; background:rgba(44,95,138,0.08); border-radius:8px; display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--primary); }
+.infoLabel { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:4px; }
+.infoVal { font-size:15px; font-weight:500; line-height:1.5; }
+.infoVal a { color:var(--primary); }
+.horaires { margin:20px 0; }
+.horaireTitle { font-family:var(--font-title); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:10px; }
+.horaireRow { display:flex; justify-content:space-between; font-size:13px; padding:5px 0; border-bottom:1px solid var(--gris-border); }
+.ferme { opacity:0.4; }
+.mapWrap { height:240px; border-radius:var(--radius); overflow:hidden; margin-top:20px; }
+.mapWrap iframe { width:100%; height:100%; border:none; }
+
+.formWrap { background:white; padding:36px; border-radius:var(--radius); box-shadow:var(--shadow); }
+.formTitle { font-family:var(--font-title); font-size:22px; font-weight:800; text-transform:uppercase; margin-bottom:24px; padding-bottom:16px; border-bottom:2px solid var(--gris-border); }
+.row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.field { display:flex; flex-direction:column; gap:6px; margin-bottom:16px; }
+.field label { font-family:var(--font-title); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--muted); }
+.field input, .field select, .field textarea {
+  padding:12px 14px; border:1.5px solid var(--gris-border);
+  border-radius:var(--radius); font-family:var(--font-body);
+  font-size:14px; outline:none; transition:var(--ease); color:var(--texte);
+  background:white;
+}
+.field input:focus, .field select:focus, .field textarea:focus { border-color:var(--primary); box-shadow:0 0 0 3px rgba(44,95,138,0.08); }
+.field textarea { resize:vertical; }
+.err { border-color:var(--accent) !important; }
+.success { text-align:center; padding:40px 20px; }
+.success svg { margin:0 auto 16px; }
+.success h4 { font-family:var(--font-title); font-size:22px; font-weight:800; text-transform:uppercase; margin-bottom:8px; }
+.success p { color:var(--muted); font-size:15px; }
+
+@media(max-width:900px){ .grid{grid-template-columns:1fr; gap:40px;} }
+@media(max-width:600px){ .row{grid-template-columns:1fr;} .formWrap{padding:20px;} }

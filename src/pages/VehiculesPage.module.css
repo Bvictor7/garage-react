@@ -1,0 +1,20 @@
+.filters { display:flex; align-items:center; gap:12px; margin-bottom:32px; flex-wrap:wrap; }
+.select { padding:10px 14px; border:1px solid var(--gris-border); border-radius:var(--radius); font-family:var(--font-body); font-size:14px; outline:none; }
+.select:focus { border-color:var(--primary); }
+.count { font-size:13px; color:var(--muted); margin-left:auto; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:24px; }
+.card { background:white; border-radius:var(--radius); box-shadow:var(--shadow-sm); overflow:hidden; transition:var(--ease); }
+.card:hover { transform:translateY(-4px); box-shadow:var(--shadow); }
+.img { width:100%; height:180px; }
+.body { padding:16px; }
+.marque { font-family:var(--font-title); font-size:13px; font-weight:700; text-transform:uppercase; display:flex; align-items:center; gap:6px; }
+.badge { background:var(--primary); color:white; font-size:10px; padding:2px 6px; border-radius:3px; }
+.modele { font-family:var(--font-title); font-size:16px; font-weight:800; text-transform:uppercase; margin:2px 0 6px; }
+.garantie { font-size:11px; color:var(--primary); font-weight:600; background:rgba(44,95,138,0.08); padding:3px 8px; border-radius:3px; display:inline-block; margin-bottom:10px; }
+.meta { display:flex; flex-wrap:wrap; gap:4px; margin-bottom:12px; }
+.meta span { font-size:11px; color:var(--muted); background:var(--gris); padding:3px 7px; border-radius:3px; }
+.prix { border-top:1px solid var(--gris-border); padding-top:10px; display:flex; justify-content:space-between; align-items:center; }
+.prixNum { font-family:var(--font-title); font-size:20px; font-weight:900; }
+.prixNum small { font-size:11px; color:var(--muted); }
+.prixMens { font-size:12px; color:var(--muted); }
+.prixMens strong { color:var(--primary); }
