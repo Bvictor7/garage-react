@@ -24,10 +24,15 @@ export default function AproposPage() {
         <div className="container">
           <div className={s.mainGrid}>
             <R>
-              <div className={`${s.mainImg} img-placeholder`}>
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="1"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-                <span className={s.imgHint}>Photo du garage à ajouter</span>
-              </div>
+              <R>
+  <div className={s.mainImg}>
+    <img 
+      src="/images/hero.png" 
+      alt="Garage Mon Auto Aquitaine" 
+      className={s.realImg} 
+    />
+  </div>
+</R>
             </R>
             <R delay={120} className={s.mainContent}>
               <p className="section-label">Garage indépendant toutes marques</p>
