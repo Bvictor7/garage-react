@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
           </div>
           <p className={s.brandDesc}>
-            Garage indépendant toutes marques à {INFOS.ville}.<br />
+            Garage indépendant multi-marques à {INFOS.ville}.<br />
             Entretien, réparation et services auto de qualité dans les Landes (40).
           </p>
           <div className={s.social}>
@@ -88,7 +88,7 @@ export default function Footer() {
 
       <div className={s.bottom}>
         <div className="container">
-          <span>© 2026 {INFOS.nom} · Tous droits réservés · Fait par <strong>JAN TECH</strong></span>
+          <span>© 2026 {INFOS.nom} · Tous droits réservés · Fait par <strong>Belahcene Victor</strong></span>
           <span>
             <Link to="/mentions-legales">Mentions légales</Link>
             {' · '}

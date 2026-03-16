@@ -63,8 +63,5 @@ export const ACTUALITES = [
 ]
 
 export const PARTENAIRES = [
-  { nom:'Dangel', label:'Négociant automobile',  bg:'#e8e8e8', color:'#222' },
-  { nom:'VO 3000', label:'Négociant automobile',  bg:'#1a1a1a', color:'#fff' },
-  { nom:'Dispro', label:'Fournisseur officiel',   bg:'#003087', color:'#fff' },
-  { nom:'Ucar',   label:'Location de voiture',    bg:'#FFD700', color:'#222' },
+  { nom:'Mohamed Ahmindach', label:'Mécanicien independant',  bg:'#e8e8e8', color:'#222' },
 ]
